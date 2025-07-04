@@ -1,90 +1,106 @@
-# RISE-Hackathon
-# 🧠 Smart AI Inventory & Review Assistant
-
-## 🎯 Project Goal
-
-Use AI to **analyze customer reviews + inventory data**, extract **insights**, and auto-generate **weekly business reports** that save time and reduce risk.
+# 🛒 Ecom Insight Agent  
+### AI-Powered Product Review & Inventory Assistant for E-Commerce Teams
 
 ---
 
-## 🧩 Problem Statement
+## 🧠 Description
 
-> Managers and sellers waste time manually checking inventory and reading through user feedback.  
-> Our tool turns this weekly routine into **a single-click summary** with actionable insights.
+**Ecom Insight Agent** is a web-based AI agent designed to empower e-commerce businesses with **deep product insights**, **faster decision-making**, and **proactive inventory management**.
 
----
+Built with cutting-edge tools like **Llama 3.1 (on Groq)**, **Snowflake**, and optionally **Coral Protocol**, this platform processes review + inventory data to help teams:
 
-## 💡 What We’re Building
+- Analyze customer feedback at scale
+- Predict stock risks
+- Answer product-related business questions  
+All through a **friendly natural language interface**.
 
-### ✅ Core Features
-
-1. **Analyze Customer Feedback**
-   - Find complaints, praise, recurring issues.
-   - _E.g.,_ “Customers dislike packaging on Product A.”
-
-2. **Give Product Improvement Suggestions**
-   - AI summarizes what to fix or improve in design, copy, etc.
-
-3. **Predict Inventory Risks**
-   - Forecast which items are trending and likely to go out of stock.
-
-4. **Answer Key Business Questions**
-   - Which product got the most negative reviews last week?
-   - What do customers love about our best seller?
-   - What items need restocking soon?
-
-5. **Generate Action Plan**
-   - _E.g._:
-     - 🛒 Restock Product B
-     - ✏️ Improve description for Product C
-     - 🎁 Redesign packaging for Product A
-
-6. **📄 One-Click Weekly Report**
-   - Generate PDF report from inventory + feedback with one click.
-   - No need to wait for weekly email—instant during hackathon demos.
+Deployed on **Vultr**, it offers a **cloud-native, scalable** solution for real-world enterprise use.
 
 ---
 
-## 🛠️ Architecture Overview
+## 🎯 Key Features
 
-### 🧱 System Inputs
+### ✅ Smart Review Analyzer  
+Understand what customers **love**, **complain about**, or **suggest** — even across thousands of product reviews.
 
-- Inventory data (`CSV` format)
-- Weekly customer feedback (`free-text`)
+### 📉 Stock Risk Predictor  
+Identify which products are trending, likely to sell out, or require urgent restocking.
+
+### 💬 Ask-the-Agent Interface  
+Use natural questions like:
+- “What are top complaints for Product X?”
+- “Which items may sell out next week?”
+- “Summarize review trends for this month.”
+
+### 🔍 LLM-Powered Insight  
+Using **Llama 3.1 on Groq**, the agent provides fast, high-quality reasoning and summarization.
+
+### ☁️ Cloud-Hosted & Scalable  
+- Hosted on **Vultr**
+- Inventory/review data in **Snowflake**
+- Secure, enterprise-grade performance
 
 ---
 
-### 📊 Flow Diagram 1: System Overview
+## 🔧 Tech Stack
 
+| Layer | Technology |
+|-------|------------|
+| Language Model | Llama 3.1 via Groq |
+| Data Source | Snowflake (inventory + feedback) |
+| Agent Logic | Python + custom reasoning |
+| UI | Streamlit or Flask |
+| Deployment | Vultr Cloud |
+| Optional | Coral Protocol, Fetch.ai |
+
+---
+
+## 👥 Ideal Users
+
+- E-commerce product managers  
+- Inventory and ops teams  
+- Customer success analysts  
+- Business analysts & marketers
+
+---
+
+## 🚀 Example Use Case
+
+You upload:  
+📁 `weekly_reviews.csv` + `inventory_data.csv`
+
+You ask:  
+> “What’s hurting sales for Product B?”
+
+AI Agent replies:  
+> "Many reviews mention **delayed shipping** and **poor packaging**. Stock levels are also **low**, which may hurt future sales."
+
+🎯 Bonus:  
+> Suggests **restocking now** and **updating product packaging**.
+
+---
+
+## 🧭 Architecture Overview
+
+### 🖼️ System Diagram 1 – User Goals & Logic Flow  
 ![System Overview](./6b06638207ebae7d658d3dabf9b2942.png)
 
 ---
 
-### 🧪 Flow Diagram 2: Technical Flow
-
-![Tech Architecture](./cd53825ba09992480e50c7b9f04fd52.png)
-
----
-
-## 🚀 Why It Matters
-
-✅ Saves time  
-✅ Avoids stock-outs  
-✅ Surfaces customer insights  
-✅ Helps teams act faster
+### 🖼️ System Diagram 2 – Technical Data Flow  
+![Architecture Overview](./cd53825ba09992480e50c7b9f04fd52.png)
 
 ---
 
-## 📌 Use Case Summary
+## 📌 Summary
 
-| Use Case | Example |
-|----------|---------|
-| 🔍 Review Analysis | Find top complaints, praise, suggestions |
-| 📦 Inventory Forecast | "Product B may go out of stock in 4 days" |
-| 🧠 Business Q&A | "Which item needs urgent restock?" |
-| 📄 Instant Report | One-click PDF summary for the week |
+| Feature | Value |
+|---------|-------|
+| 🔎 Review Analysis | Find patterns like complaints, praise, or bugs |
+| 📦 Inventory Forecasting | Prevent stockouts before they happen |
+| 🧠 LLM Answers | Ask product questions in plain English |
+| 📄 PDF Generator | One-click report for team decision-making |
 
 ---
 
-> Powered by ChatGPT or similar LLM-based engine.
-
+> Built for Hackathons. Ready for Production.
