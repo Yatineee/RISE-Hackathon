@@ -1,0 +1,7 @@
+product_id,product_name,category,stock_quantity,restock_threshold
+P001,Wireless Earbuds,Electronics,24,6
+P002,Bluetooth Speaker,Electronics,50,14
+P003,Smartwatch,Wearables,19,12
+P004,Phone Case,Accessories,0,11
+P005,Fitness Tracker,Wearables,47,10
+P006,Laptop Stand,Office,30,8
