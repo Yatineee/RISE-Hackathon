@@ -1,0 +1,31 @@
+review_id,product_id,product_name,review_text,rating,review_date
+101,P003,Smartwatch,Loud and clear. Love the design!,5,2024-06-09
+102,P003,Smartwatch,Loud and clear. Love the design!,5,2024-06-13
+103,P003,Smartwatch,"The sound is great, but the battery dies too fast.",3,2024-06-12
+104,P003,Smartwatch,Display is too dim in sunlight. Otherwise great features.,4,2024-06-06
+105,P002,Bluetooth Speaker,Excellent product! Highly recommend.,5,2024-06-13
+106,P003,Smartwatch,"Not comfortable in ears, and battery doesn’t last.",2,2024-06-02
+107,P002,Bluetooth Speaker,Display is too dim in sunlight. Otherwise great features.,4,2024-06-06
+108,P004,Phone Case,"Just okay, nothing special.",3,2024-06-04
+109,P003,Smartwatch,Works perfectly. Will buy again.,5,2024-06-05
+110,P002,Bluetooth Speaker,Display is too dim in sunlight. Otherwise great features.,4,2024-06-07
+111,P002,Bluetooth Speaker,Works perfectly. Will buy again.,5,2024-06-12
+112,P002,Bluetooth Speaker,Excellent product! Highly recommend.,5,2024-06-01
+113,P004,Phone Case,Poor build quality.,2,2024-06-15
+114,P001,Wireless Earbuds,Terrible experience. Will not buy again.,1,2024-06-03
+115,P004,Phone Case,Excellent product! Highly recommend.,5,2024-06-08
+116,P004,Phone Case,Stopped working after one week.,1,2024-06-14
+117,P004,Phone Case,"Just okay, nothing special.",3,2024-06-09
+118,P002,Bluetooth Speaker,"The sound is great, but the battery dies too fast.",3,2024-06-01
+119,P004,Phone Case,Average quality for the price.,3,2024-06-11
+120,P004,Phone Case,"Just okay, nothing special.",3,2024-06-07
+121,P004,Phone Case,Loud and clear. Love the design!,5,2024-06-02
+122,P003,Smartwatch,Poor build quality.,2,2024-06-07
+123,P002,Bluetooth Speaker,Poor build quality.,2,2024-06-13
+124,P001,Wireless Earbuds,"Not comfortable in ears, and battery doesn’t last.",2,2024-06-06
+125,P004,Phone Case,Excellent product! Highly recommend.,5,2024-06-10
+126,P003,Smartwatch,Excellent product! Highly recommend.,5,2024-06-14
+127,P003,Smartwatch,"Not comfortable in ears, and battery doesn’t last.",2,2024-06-06
+128,P001,Wireless Earbuds,Terrible experience. Will not buy again.,1,2024-06-12
+129,P003,Smartwatch,Decent for everyday use.,4,2024-06-04
+130,P004,Phone Case,Terrible experience. Will not buy again.,1,2024-06-08
