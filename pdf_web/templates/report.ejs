@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AI Report</title>
+  <style>
+    /* Global */
+    body { font-family: "Segoe UI", sans-serif; margin:0; padding:0; }
+    .page { width:794px; margin:auto; padding:20px; background:white; }
+    header, footer { text-align:center; }
+    header h1 { margin:5px 0; color:#2c3e50; }
+    footer { font-size:12px; color:#888; }
+
+    /* Card */
+    .card { border:1px solid #ddd; border-radius:8px; padding:15px; margin-bottom:20px; }
+    .card h2 { margin-top:0; color:#4e73df; }
+    .list-item { margin:8px 0; }
+    .encourage { margin:8px 20px; padding:10px; background:#e8f5e9; border-left:4px solid #4caf50; }
+
+    /* Table */
+    table { width:100%; border-collapse: collapse; margin-top:10px; }
+    th, td { border:1px solid #ccc; padding:8px; text-align:left; vertical-align: top; }
+    th { background:#f0f4ff; }
+
+    /* Chart placeholder */
+    .chart { text-align:center; margin:20px 0; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header style="position: relative; text-align: center;">
+    <img
+        src="http://localhost:3001/public/logo.png"
+        alt="Logo"
+        height="100"
+        style="position: absolute; left: 6%; top: 50%; transform: translateY(-50%);"
+    />
+    <h1>📊 Weekly AI Report</h1>
+    <p><small>Generated on: <%= new Date().toLocaleString() %></small></p>
+    </header>
+
+
+    <!-- Best Sellers with Encouragement -->
+    <div class="card">
+        
+      <h2>🏆 Best Sellers</h2>
+      <% best_sellers.forEach(item => { %>
+        <div class="card">
+          <p><strong><%= item.product_name %></strong></p>
+          <ul>
+            <% item.reasons.forEach(r => { %>
+              <li class="list-item"><%= r %></li>
+            <% }) %>
+          </ul>
+          <% if (item.encouragement) { %>
+            <div class="encourage">
+              <em><%= item.encouragement %></em>
+            </div>
+          <% } %>
+        </div>
+      <% }) %>
+    </div>
+
+    <!-- Worst Rated with Suggestions -->
+    <div class="card">
+      <h2>👎 Worst Rated Products</h2>
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Main Complaints</th>
+          <th>Improvement Suggestions</th>
+        </tr>
+        <% worst_rated.forEach(item => { %>
+          <tr>
+            <td><%= item.product_name %></td>
+            <td><%= item.complaints.join(', ') %></td>
+            <td>
+              <% if (item.suggestions && item.suggestions.length) { %>
+                <ul>
+                  <% item.suggestions.forEach(s => { %>
+                    <li><%= s %></li>
+                  <% }) %>
+                </ul>
+              <% } else { %>
+                <em>No suggestions provided.</em>
+              <% } %>
+            </td>
+          </tr>
+        <% }) %>
+      </table>
+    </div>
+
+    <!-- Low Stock Alerts (unchanged) -->
+    <div class="card">
+      <h2>⚠️ Low Stock Alerts</h2>
+      <table>
+        <tr><th>Product</th><th>Remaining</th><th>Threshold</th></tr>
+        <% low_stock.forEach(item => { %>
+          <tr>
+            <td><%= item.product_name %></td>
+            <td><%= item.stock_left %></td>
+            <td><%= item.restock_threshold %></td>
+          </tr>
+        <% }) %>
+      </table>
+    </div>
+
+    <footer>
+      Powered by Ecom Insight Agent
+    </footer>
+  </div>
+</body>
+</html>
